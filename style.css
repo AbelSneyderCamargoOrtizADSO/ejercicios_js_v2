@@ -1,0 +1,49 @@
+body{
+  font-family: sans-serif;
+  background-color: #ECFDF5;
+}
+
+.title{
+  text-align: center;
+  margin: 50px;
+}
+
+.ejerc__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ejerc__item{
+  list-style: none;
+  padding: 40px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #A7F3D0;
+  box-shadow: 2px 2px 4px 1px lightgrey;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+.ejerc__link{
+  text-decoration: none;
+  color: #047857;
+}
+
+.ejerc__item:hover{
+  background-color: #f7df1e;
+}
+
+.ejerc__item:hover::after{
+  content: "Haz click en Ejercicio para ejecutar";
+  position: absolute;
+  top: -18px;
+  width: 100%;
+  left: -5px;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #A7F3D0;
+}
